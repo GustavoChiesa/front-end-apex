@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>11 - Função</title>
+
+    <script>
+
+        // Função 01
+        function mensagem(){
+            alert("Hello World")
+        }
+
+        // Função 02
+        function concatenar(){
+            // Obter o nome
+            var nome = document.getElementById("campo").value
+
+            // Concatenar uma frase com o nome
+            document.getElementById("exibir").innerHTML = "Boa tarde "+nome
+        }
+
+    </script>
+</head>
+<body>
+       <button onclick="mensagem()">Clique aqui</button>
+       <hr>
+
+       <input type="text" placeholder="Informe seu nome" id="campo">
+       <button onclick="concatenar()">Enviar</button>
+       <h1 id="exibir"></h1>
+</body>
+</html>

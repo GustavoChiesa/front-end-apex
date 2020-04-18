@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+
+    <script>
+
+        function calcular(){
+            
+            // Obter notas
+            var nota1 = parseFloat(document.getElementById("nota1").value)
+            var nota2 = parseFloat(document.getElementById("nota2").value)
+
+            // Média
+            var media = (nota1+nota2) / 2
+
+            // Situação
+            var situacao = "Reprovado"
+            if(media >= 7){
+                situacao = "Aprovado"
+            }
+
+            // Exibir
+            document.getElementById("exibir").innerHTML = situacao+" com média "+media
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="Nota 1" id="nota1">
+    <input type="text" placeholder="Nota 2" id="nota2">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>
