@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+            
+            // Obter dados
+            var pedido = parseInt(document.getElementById("pedido").value)
+            var pagamento = document.getElementById("pagamento").value
+
+           // Escolha
+           var troco = 0;
+           switch(pedido){
+                case 1:
+                troco = pagamento - 12
+                break
+
+                case 2:
+                troco = pagamento - 4
+                break
+
+                case 3:
+                troco = pagamento - 16
+                break
+
+                case 4:
+                troco = pagamento - 4.5
+                break
+           }
+
+           // Exibir
+           if(troco < 0){
+               document.getElementById("exibir").innerHTML = "Pagamento inferior ao valor do pedido."
+           }else{
+               document.getElementById("exibir").innerHTML = "O troco será de R$ "+troco;
+           }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <ol>
+        <li>Pizza - R$12,00</li>
+        <li>Pão de Quejo - R$4,00</li>
+        <li>Macarrão - R$16,00</li>
+        <li>Pastel - R$4,50</li>
+    </ol>
+    <input type="text" placeholder="Pedido" id="pedido">
+    <input type="text" placeholder="Pagamento" id="pagamento">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>

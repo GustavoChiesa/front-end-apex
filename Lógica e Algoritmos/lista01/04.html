@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 04</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+            
+            // Obter moedas
+            var c1 = document.getElementById("c1").value
+            var c5 = document.getElementById("c5").value
+            var c10 = document.getElementById("c10").value
+            var c25 = document.getElementById("c25").value
+            var c50 = document.getElementById("c50").value
+            var r1 = document.getElementById("r1").value
+
+            // Somar
+            var total = (c1 * 0.01) + (c5 * 0.05) + (c10 * 0.10) + (c25 * 0.25) + (c50 * 0.50) + (r1 * 1.00)
+
+            // Exibir
+            document.getElementById("exibir").innerHTML = "R$ "+total.toFixed(2)
+
+            // O comando toFixed(2) arredonda para duas casas decimais
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="R$0,01" id="c1">
+    <input type="text" placeholder="R$0,05" id="c5">
+    <input type="text" placeholder="R$0,10" id="c10">
+    <input type="text" placeholder="R$0,25" id="c25">
+    <input type="text" placeholder="R$0,50" id="c50">
+    <input type="text" placeholder="R$1,00" id="r1">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>

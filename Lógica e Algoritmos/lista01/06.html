@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 06</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+            
+            // Obter valores
+            var ld = parseInt(document.getElementById("ld").value)
+            var li = parseInt(document.getElementById("li").value)
+            var le = parseInt(document.getElementById("le").value)
+
+            // Condicional e exibição
+            if((ld == li) && (li == le)){
+                document.getElementById("exibir").innerHTML = "Equilátero"
+            }else if((ld != li) && (li != le) && (le != ld)){
+                document.getElementById("exibir").innerHTML = "Escaleno"
+            }else{
+                document.getElementById("exibir").innerHTML = "Isóceles"
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="Lado direito" id="ld">
+    <input type="text" placeholder="Lado inferior" id="li">
+    <input type="text" placeholder="Lado esquerdo" id="le">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>

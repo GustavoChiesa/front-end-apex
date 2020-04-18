@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 03</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+            
+            // Obter lados
+            var ld1 = parseInt(document.getElementById("ld1").value)
+            var ld2 = parseInt(document.getElementById("ld2").value)
+            var ld3 = parseInt(document.getElementById("ld3").value)
+            var ld4 = parseInt(document.getElementById("ld4").value)
+
+            // Condicional
+            if((ld1 == ld2) && (ld2 == ld3) && (ld3 == ld4)){
+                document.getElementById("exibir").innerHTML = "É um quadrado"
+            }else{
+                document.getElementById("exibir").innerHTML = "Não é um quadrado"
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="Lado Superior" id="ld1">
+    <input type="text" placeholder="Lado Direito" id="ld2">
+    <input type="text" placeholder="Lado Inferior" id="ld3">
+    <input type="text" placeholder="Lado Esquerdo" id="ld4">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>

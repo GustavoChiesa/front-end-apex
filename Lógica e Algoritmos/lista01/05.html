@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 05</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+            
+            // Obter números
+            var n1 = parseInt(document.getElementById("n1").value)
+            var n2 = parseInt(document.getElementById("n2").value)
+
+            // Condicional e exibição
+            if(n1 == n2){
+                document.getElementById("exibir").innerHTML = "A soma dos valores é "+(n1+n2)
+            }else{
+                document.getElementById("exibir").innerHTML = "A multiplicação "+(n1*n2)
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="Primeiro número" id="n1">
+    <input type="text" placeholder="Segundo número" id="n2">
+    <button onclick="calcular()">Calcular</button>
+
+    <h1 id="exibir"></h1>
+
+</body>
+</html>
