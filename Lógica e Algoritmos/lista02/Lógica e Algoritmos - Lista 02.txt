@@ -1,0 +1,7 @@
+1) O usuário informa um número, em seguida faça a tabuada daquele número.
+
+2) Será pedido um número, em seguida exiba os 10 antecessores e os 10 sucessores.
+
+3) Serão pedidos vários valores, some os valores informados, até que seja informado o número 0. Após informar o número 0, exiba a soma dos valores informados.
+Ex: 5, 7, 0
+Resultado: 12

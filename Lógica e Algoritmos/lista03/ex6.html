@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>06 - Exercício</title>
+
+    <script>
+
+        // Números
+        var numeros = []
+
+        // Obter os 5 números
+        for(var indice = 0; indice < 5; indice++){
+            numeros.push(prompt("Informe o "+(indice+1)+"º número"))
+        }
+
+        // Variável para verificar se há o número 10
+        var existe10 = false
+
+        // Exibir a posição onde há o número 10
+        for(var indice = 0; indice < 5; indice++){
+            if(numeros[indice] == 10){
+                document.write("Há um número 10 na posição: "+indice+"<br>")
+                existe10 = true
+            }
+        }
+
+        // Caso não encontre o número 10
+        if(existe10 == false){
+            document.write("Não foi encontrado o número 10")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

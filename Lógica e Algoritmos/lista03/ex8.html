@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Exercício</title>
+
+    <script>
+
+        // Vetor
+        var nomes = ["Alice", "Brenda", "Caio", "Dênis", "Elaine", "Felipe", "Gabriela", "Henrique", "Ivo", "Juliana"]
+
+        // Nome a ser procurado
+        var pesquisa = prompt("Informe um nome que deseja pesquisar")
+
+        // Variável para verificar se encontra o nome
+        var existeNome = false
+
+        // Pesquisar nome
+        for(var indice = 0; indice < 10; indice++){
+            if(nomes[indice] == pesquisa){
+                document.write(nomes[indice]+" está na posição: "+indice)
+                existeNome = true
+            }
+        }
+
+        // Caso não encontre o nome
+        if(existeNome == false){
+            document.write("O nome "+pesquisa+" não foi encontrado.")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Exercício</title>
+
+    <script>
+
+        // Vetor
+        var nomes = []
+
+        // Variável para obter o nome
+        var nome
+
+        // Índice
+        var indice = 0
+
+        // Laço
+        do{
+            nome = prompt("Informe um nome")
+
+            // Condicional
+            if(nome != "sair"){
+                nomes[indice] = nome
+                indice++
+            }
+
+        }while(nome != "sair")
+
+        // Listar nomes
+        for(var i=0; i<nomes.length; i++){
+            document.write(nomes[i]+"<br>")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

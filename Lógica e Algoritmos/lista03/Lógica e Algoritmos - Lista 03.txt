@@ -1,0 +1,50 @@
+1) Pedir 5 nomes de produtos, em seguida exiba os nomes desses produtos.
+
+
+2) Pedir 10 idades, em seguida exiba quantos são maiores de idade e quantos são menores de idade.
+
+
+3) Pedir 5 números, em seguida exibir em ordem contrária.
+Exemplo: Se o usuário informar 4, 6, 8, 9 e 10, exiba 10, 9, 8, 6 e 4
+
+
+4) Crie um laço WHILE ou DO/WHILE, peça um nome e armazene em um vetor. Enquanto não for digitado o nome SAIR, deverá perguntar os nomes.
+
+Quando digitar SAIR exiba todos os nomes cadastrados.
+
+
+5) Crie dois vetores, um para armazenar o nome e outro a idade. Crie um laço para que enquanto não seja digitado o nome SAIR, seja pedido o nome e a idade.
+
+Quando sair do laço exiba os seguintes dados:
+* Listar todos os nomes e todas as idades
+* Quantidade de pessoas maiores de idade
+* Quantidade de pessoas menores de idade
+* Média das idades (soma de todas as idades / pelo número de cadastros)
+
+
+6) Crie um vetor e peça para o usuário armazenar 5 números, após cadastrar os 5 números exiba a posição que se encontram o número 10.
+
+Caso não haja nenhum número 10 cadastrado informe: Não foi informado o número 10
+O usuário poderá digitar mais de uma vez o número 10, você precisa exibir cada posição que contenha o 10.
+
+
+7) Crie dois vetores, no primeiro peça para o usuário cadastrar 10 números, no outro peça para o usuário cadastrar mais 10 números. Em seguida peça para o usuário informar um tipo de cálculo (soma, subtração, multiplicação e divisão).
+
+Exiba o cálculo entre posições de cada vetor, exemplo:
+
+Vetor1   Vetor2
+1        5
+2        3
+3        10
+4        9
+5        8
+6        2
+7        3
+8        4
+9        19
+10       5
+
+Você deverá exibir o cálculo entre 1 e 5, 2 e 3, 3 e 10...
+
+
+8) Crie um vetor contendo 10 nomes. Em seguida com um prompt, peça para o usuário informar um nome. Caso ele exista no vetor exiba o nome e sua posição no vetor, caso não exista exiba: Usuário não encontrado.

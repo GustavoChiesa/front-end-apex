@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>02 - Exercício</title>
+
+    <script>
+
+        // Vetor
+        var idades = []
+
+        // Obter as 10 idades
+        for(var indice = 0; indice < 10; indice++){
+            idades.push(prompt("Informe a "+(indice+1)+"ª idade"))
+        }
+
+        // Contadores
+        var maiorIdade = 0, menorIdade = 0
+
+        // Validar maiores e menores de idade
+        for(var indice = 0; indice < 10; indice++){
+           if(idades[indice] >= 18){
+               maiorIdade++
+           }else{
+               menorIdade++
+           }
+        }
+
+        // Exibir contadores
+        document.write("Maiores de idade: "+maiorIdade+"<br>Menores de idade: "+menorIdade)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

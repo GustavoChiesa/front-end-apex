@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>07 - Exercício</title>
+
+    <script>
+
+        // Números
+        var numeros1 = []
+        var numeros2 = []
+
+        // Obter os 10 números
+        for(var indice = 0; indice < 10; indice++){
+            numeros1.push(parseInt(prompt("Informe o "+(indice+1)+"º número")))
+        }
+
+        // Obter os outros 10 números
+        for(var indice = 0; indice < 10; indice++){
+            numeros2.push(parseInt(prompt("Informe o "+(indice+1)+"º número")))
+        }
+
+        // Pedir a operacao
+        var operacao = parseInt(prompt("1)Somar \n2)Subtrair \n3)Multiplicar \n4)Dividir")) 
+
+
+        // Realizar cálculo
+        switch(operacao){
+            case 1:
+                for(var indice = 0; indice < 10; indice++){
+                    var total = numeros1[indice]+numeros2[indice]
+                    document.write(numeros1[indice]+" + "+numeros2[indice]+" = "+total+"<br>")
+                }
+            break
+
+            case 2:
+                for(var indice = 0; indice < 10; indice++){
+                    var total = numeros1[indice]-numeros2[indice]
+                    document.write(numeros1[indice]+" - "+numeros2[indice]+" = "+total+"<br>")
+                }
+            break
+
+            case 3:
+                for(var indice = 0; indice < 10; indice++){
+                    var total = numeros1[indice]*numeros2[indice]
+                    document.write(numeros1[indice]+" * "+numeros2[indice]+" = "+total+"<br>")
+                }
+            break
+            
+            case 4:
+                for(var indice = 0; indice < 10; indice++){
+                    var total = numeros1[indice]/numeros2[indice]
+                    document.write(numeros1[indice]+" / "+numeros2[indice]+" = "+total+"<br>")
+                }
+            break
+
+            default:
+                document.write("Operação inválida")
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Exercício</title>
+
+    <script>
+
+        // Vetores
+        var nomes = []
+        var idades = []
+
+        // Variável para obter o nome
+        var nome
+
+        // Contadores de idade
+        var maiorIdade = 0, menorIdade = 0
+
+        // Somar idades
+        var somarIdades = 0
+
+        // Índice
+        var indice = 0
+
+        // Laço
+        do{
+            nome = prompt("Informe um nome")
+
+            // Condicional
+            if(nome != "sair"){
+                // Cadastrar nome
+                nomes[indice] = nome
+
+                // Obter idade e cadastrar no vetor
+                var idade = parseInt(prompt("Informe a idade de "+nome))
+                idades[indice] = idade
+
+                // Somar idade
+                somarIdades += idade;
+
+                // Maior e menor de idade
+                if(idade >= 18){
+                    maiorIdade++
+                }else{
+                    menorIdade++
+                }
+
+                // Incrementar índice
+                indice++
+            }
+
+        }while(nome != "sair")
+
+        // Listar dados
+        for(var i=0; i<nomes.length; i++){
+            document.write(nomes[i]+" - "+idades[i]+" anos<br>")
+        }
+
+        // Estatísitcas
+        document.write("<hr>Maiores de idade: "+maiorIdade)
+        document.write("<br>Menores de idade: "+menorIdade)
+        document.write("<br>Média das idades: "+(somarIdades/indice))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

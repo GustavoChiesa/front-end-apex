@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>17 - Funções de Vetor</title>
+
+    <script>
+
+        // Vetor de nomes
+        var nomes = ["Ana", "Bianca", "Cleber"]
+              
+        // Alterar Ana para Carolina
+        nomes[0] = "Carolina"
+
+        // Remover o Cleber
+        nomes.splice(2, 1)
+
+        // Adicionar um novo nome
+        nomes.push(prompt("Informe um nome"));
+
+        // Obter a quantidade de nomes
+        var quantidade = nomes.length;
+        document.write("Há "+quantidade+" nomes no vetor.<hr>")
+
+        // Laço
+        for(var indice=0; indice<quantidade; indice++){
+            document.write(nomes[indice]+"<br>")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
