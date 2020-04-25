@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>15 - Texto</title>
+
+    <script>
+
+        // Palavra
+        var palavra = "algoritmos"
+
+        // Obter a quantidade de letras
+        function obterLetras(){
+            alert("A palavra possui "+palavra.length+" letras")
+        }
+
+        // Obter letra via posição
+        function posicaoLetra(){
+            var letra = prompt("Informe uma posição")
+
+            alert("Letra: "+palavra.charAt(letra))
+        }
+
+        // Cortar palavra
+        function cortar(){
+            var inicio = prompt("Informe a posição inicial")
+            var fim = prompt("Informe a posição final")
+
+            alert(palavra.substring(inicio, fim))
+        }
+
+        // Função maiúsculas e minúsculas
+        function teclar(termo){
+            document.getElementById("maiusculas").innerHTML = termo.toUpperCase()
+            document.getElementById("minusculas").innerHTML = termo.toLowerCase()
+        }
+
+    </script>
+</head>
+<body>
+    
+    <button onclick="obterLetras()">Quantidade de letras</button>
+    <button onclick="posicaoLetra()">Posição da letra</button>
+    <button onclick="cortar()">Cortar palavra</button>
+
+    <hr>
+
+    <input type="text" onkeyup="teclar(this.value)">
+    <h1 id="maiusculas"></h1>
+    <h1 id="minusculas"></h1>
+</body>
+</html>
